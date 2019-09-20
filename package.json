@@ -1,0 +1,24 @@
+{
+  "name": "dsa-searching",
+  "version": "1.0.0",
+  "description": "Thinkful Nights &amp; Weekends Data Structures + Algorithms: Searching Drills",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/computershawn/DSA-Searching.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/computershawn/DSA-Searching/issues"
+  },
+  "homepage": "https://github.com/computershawn/DSA-Searching#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.2"
+  }
+}

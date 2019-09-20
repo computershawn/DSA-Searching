@@ -1,18 +1,20 @@
-const Queue = require('./Queue')
+//const Queue = require('./Queue')
 
 const binarySearch = (array, value, start, end) => {
   var start = start === undefined ? 0 : start;
   var end = end === undefined ? array.length : end;
 
   if (start > end) {
-      return -1;
+      return -1
   }
 
-  const index = Math.floor((start + end) / 2);
-  const item = array[index];
+  if(value > array[array.length-1]) {
+      return -1
+  }
 
-  console.log(start, end);
-  //console.log(array[start], array[end])
+  const index = Math.floor((start + end) / 2)
+  const item = array[index]
+
   if (item == value) {
       return index;
   }
@@ -55,7 +57,7 @@ const bfs = (tree, values = []) => {
     return values;
 }
 
-let num = 8
-let arr = [3,5,6,8,11,12,14,15,17,18]
-let bsIndex = binarySearch(arr, num)
-console.log(`Index of ${num} in array ${arr} is ${bsIndex}`)
+// let num = 8
+// let arr = [3,5,6,8,11,12,14,15,17,18]
+// let bsIndex = binarySearch(arr, num)
+// console.log(`Index of ${num} in array ${arr} is ${bsIndex}`)
